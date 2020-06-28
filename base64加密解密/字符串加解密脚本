@@ -1,0 +1,12 @@
+encode:
+str = ""
+bytes_str = str.encode("utf-8")
+str_encode = base64.b64encode(bytes_str)  # 被编码的参数必须是二进制数据
+print(str_encode)
+
+
+decode:
+import base64
+str = ""
+str_encode = base64.b64decode(str).decode("utf-8")
+print(str_encode)
